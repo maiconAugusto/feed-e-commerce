@@ -1,0 +1,65 @@
+.container-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+}
+.container-header header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+.container-header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container-header li{
+    color: white;
+    list-style: none;
+    margin: 0 0 0 30px;
+    padding: 4px 14px 4px 14px;
+}
+.container-header li:hover{
+    background-color: rgb(73, 73, 73);
+}
+.container-header-right{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+.container-header-right small{
+    color: white
+}
+#container-header-btn{
+    background-color: rgb(81, 255, 255);
+    border-radius: 4px;
+    padding: 4px 24px 4px 24px;
+    margin-right: 28px;
+    font-size: 12px;
+    box-shadow: 2px 2px 1px rgb(57, 223, 223);
+}
+#container-header-btn:hover{
+    background-color: rgb(57, 214, 214);
+    box-shadow: none
+}
+.header-avatar{
+    display: flex;
+    margin-right: 6px;
+    border-radius: 100%
+}
+.header-user{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: 700px;
+    font-size: 13px;
+    margin-right: 50px
+}
+.link-donation{
+    text-decoration: none;
+    color: white
+}

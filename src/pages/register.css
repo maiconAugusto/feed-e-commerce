@@ -1,0 +1,110 @@
+.container-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgb(150, 87, 214)
+}
+.container-register form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+.container-register input{
+    height: 34px;
+    margin-bottom: 14px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.container-register a{
+    text-decoration: none
+}
+.container-register-button{
+    height: 34px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgb(87, 241, 113);
+    box-shadow: 2px 4px 1px rgb(67, 201, 90);
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 20px
+}
+.container-register-button:hover{
+    background-color: rgb(79, 211, 79);
+    box-shadow: none
+}
+::placeholder{
+    padding-left: 8px;
+    color: rgb(53, 53, 53);
+}
+.container-goBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+    color: white
+}
+.container-goBack:hover{
+    color:  rgb(53, 53, 53);
+}
+
+.logger-error-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 34px;
+    margin-bottom: 8px;
+    background-color: rgb(197, 113, 113);
+    border-radius: 4px;
+    border: 1px solid red
+}
+.logger-error-register p{
+    color: black;
+    font-size: 14px
+}
+.register-sucess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 34px;
+    margin-bottom: 8px;
+    background-color: rgb(89, 211, 89);
+    border-radius: 4px;
+    border: 1px solid green
+}
+.register-sucess p{
+    color: white;
+    font-size: 14px
+}
+.container-register-spinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.container-register Spinner{
+    height: 34px;
+    padding: 4px;
+    
+}
+.inputFile{
+    display: none;
+}
+.btn-upload{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    text-align: center
+}
