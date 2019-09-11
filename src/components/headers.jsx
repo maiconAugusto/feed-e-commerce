@@ -14,17 +14,6 @@ const Headers = (props,history)=>{
         <Route>
             <div className="container-header">
             <header >
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <NavLink style={{color: "white", textDecoration: "none"}}
-                                activeStyle={{color: "white",textDecoration: "none"}} 
-                                to="/donations">meus desapegos</NavLink>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
                 <div className="container-header-right" >
                     <button id="container-header-btn" onClick={()=> handleLogoff()}>Sair</button>
                 </div>

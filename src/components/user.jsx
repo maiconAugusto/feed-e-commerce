@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import './user.css'
 import Fab from '@material-ui/core/Fab'
 import { Edit } from '@material-ui/icons';
-import { withRouter} from 'react-router-dom'
+import { withRouter, NavLink} from 'react-router-dom'
 
 const User = (props)=>{
     function handleEditProfile(){
@@ -22,7 +22,9 @@ const User = (props)=>{
                         <nav>
                             <ul>
                                 <li>
-                                    desapegos
+                                    <NavLink style={{color: "white", textDecoration: "none"}}
+                                    activeStyle={{color: "white",textDecoration: "none"}} 
+                                    to="/donations">desapegos</NavLink>
                                 </li>
                                 <li>
                                     interesses

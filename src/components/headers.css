@@ -5,31 +5,12 @@
     height: 60px;
     background-color: rgb(34, 34, 34);
 }
-.container-header header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center
-}
-.container-header ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.container-header li{
-    color: white;
-    list-style: none;
-    margin: 0 0 0 30px;
-    padding: 4px 14px 4px 14px;
-    text-transform: uppercase
-}
-.container-header li:hover{
-    background-color: rgb(73, 73, 73);
-}
+
 .container-header-right{
     display: flex;
     height: 100%;
     flex-direction: row;
+    justify-content: flex-end
 }
 .container-header-right small{
     color: white

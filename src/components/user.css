@@ -29,7 +29,6 @@
     list-style: none;
 }
 .container-itens li{
-    color: white;
     text-transform: uppercase;
     padding: 6px;
     width: 70%;
@@ -38,14 +37,15 @@
     text-align: left;
     background-color:  rgb(65, 64, 64);
     transition-timing-function: cubic-bezier(.42,1,.93,.38);
-    transition-property:  width;
+    transition-property:  width ,margin-bottom;
     transition-duration: 0.5s;
 }
 .container-itens li:hover{
     width: 86%;
-    color: black;
     background-color: rgb(81, 255, 255);
+    margin-bottom: 24px
 }
+
 
 #user-name{
     display: flex;
