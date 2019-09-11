@@ -20,7 +20,7 @@ const Headers = (props,history)=>{
                             <li>
                                 <NavLink style={{color: "white", textDecoration: "none"}}
                                 activeStyle={{color: "white",textDecoration: "none"}} 
-                                to="/donations">Doações</NavLink>
+                                to="/donations">meus desapegos</NavLink>
                             </li>
                         </ul>
                     </nav>

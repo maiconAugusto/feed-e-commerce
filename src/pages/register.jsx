@@ -83,8 +83,7 @@ const Register = ({history})=>{
     }
     function handleAvatar(event){
         Resizer.imageFileResizer(
-            event.target.files[0], 300, 400, 'JPEG', 100, 0, uri=>{
-                console.log(uri)
+            event.target.files[0], 400, 400, 'JPEG', 100, 0, uri=>{
                 setAvatar(uri)},'base64')
     }
     return(

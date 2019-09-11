@@ -1,15 +1,15 @@
-import React, { useEffect} from 'react'
+import React, { Fragment } from 'react'
 import './user.css'
 import Fab from '@material-ui/core/Fab'
 import { Edit } from '@material-ui/icons';
-import { Route , withRouter} from 'react-router-dom'
+import { withRouter} from 'react-router-dom'
 
 const User = (props)=>{
     function handleEditProfile(){
         props.history.push(`/editProfile/${props.user._id}`)
     }
     return(
-        <Route>
+        <Fragment>
             <div className="container-user-profile">
                 <div className="container-user-edit">
                     <img src={props.user.avatar} alt="User"/>
@@ -17,8 +17,28 @@ const User = (props)=>{
                         <Edit color='secondary'/>
                     </Fab>
                 </div>
+                <div className="container-itens">
+                    <section>
+                        <nav>
+                            <ul>
+                                <li>
+                                    desapegos
+                                </li>
+                                <li>
+                                    interesses
+                                </li>
+                                <li>
+                                    trocas de itens
+                                </li>
+                                <li>
+                                    Doações
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
             </div>
-        </Route>
+        </Fragment>
     )
 }
 export default withRouter(User)
