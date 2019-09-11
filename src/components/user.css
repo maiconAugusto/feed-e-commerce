@@ -1,7 +1,7 @@
 .container-user-profile{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 .container-user-profile img{
     width: 80px;
