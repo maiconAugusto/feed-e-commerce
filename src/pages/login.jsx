@@ -55,26 +55,29 @@ const Login = ({history})=>{
     }
     return(
         <div className="container">
-            <form onSubmit={handleLogged} className="container-form">
-                <input type="email" 
-                placeholder ="E-mail"
-                value={email}
-                onChange={(event)=>setEmail(event.target.value) }
-                />
-                <input type="password"
-                value={password}
-                placeholder = "Password"
-                onChange={(event)=> setPassword(event.target.value)}
-                />
-                {error ? handleErro() : <></>}
-                { loading ? 
-                <div className="container-spinner">
-                    <Spinner size={34} spinnerColor={"rgb(53, 53, 53)"} spinnerWidth={2} visible={loading} />
-                </div> 
-                : <button>Login</button>
-                }
-            </form>
+            <div className="ar-c">
+                <small id="logo">Desapego.com</small>
+                <form onSubmit={handleLogged} className="container-form">
+                    <input type="email" 
+                    placeholder ="E-mail"
+                    value={email}
+                    onChange={(event)=>setEmail(event.target.value) }
+                    />
+                    <input type="password"
+                    value={password}
+                    placeholder = "Password"
+                    onChange={(event)=> setPassword(event.target.value)}
+                    />
+                    {error ? handleErro() : <></>}
+                    { loading ? 
+                    <div className="container-spinner">
+                        <Spinner size={34} spinnerColor={"rgb(53, 53, 53)"} spinnerWidth={2} visible={loading} />
+                    </div> 
+                    : <button>Login</button>
+                    }
+                </form>
                 <Link  to="/register" className="container-new-register-user">Não tem cadastro? Cadastre-se.</Link>
+            </div>
         </div>
     )
 }

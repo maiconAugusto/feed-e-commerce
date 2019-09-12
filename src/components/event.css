@@ -1,0 +1,11 @@
+.container-event img{
+    margin-top: 50px;
+    width: 50px
+}
+.container-event{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

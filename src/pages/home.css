@@ -10,7 +10,7 @@
 .item{
     display: flex;
     flex-direction: column;
-    background-color: rgb(190, 146, 235);
+    background-color: rgb(150, 87, 214);
     transition: background-color 4s;
 }
 

@@ -6,11 +6,28 @@
     height: 100vh;
     background-color: rgb(150, 87, 214)
 }
+
+#logo{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 44px;
+    color:  white;
+    font-weight: 550;
+}
+
 .container-form{
+    margin-top: 44px;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width:300px ;
+}
+.ar-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    width: 350px;
+    height: 450px;
 }
 .container-form input{
     height: 34px;

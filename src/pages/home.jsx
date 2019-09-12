@@ -5,6 +5,7 @@ import Post from '../components/post';
 import api from '../config/api'
 import User from '../components/user';
 import Headers from '../components/headers'
+import Event from '../components/events'
 import Like from '../components/like';
 import Avatar from 'react-avatar'
 import { BallClipRotateMultiple } from 'react-pure-loaders';
@@ -76,6 +77,7 @@ const Home = (props)=>{
                                 }
                         </div>
                 <div className="item">
+                    <Event/>
                 </div>
                 </section>
         </Fragment>

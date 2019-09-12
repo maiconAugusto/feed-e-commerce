@@ -21,7 +21,7 @@ const Register = ({history})=>{
 
     async function handleRegister(event){
         event.preventDefault()
-        if(!name ||  !email || !phone || !password) return setError('Todos os campos devem ser preenchidos!')
+        if(!name ||  !email || !phone || !password || !avatar) return setError('Todos os campos devem ser preenchidos!')
         if( password !== password_Tow) return setError('As senhas não são iguais!')
         if(password.length < 6 ) return setError('Sua senha deve conter no mínimo 6 dígitos')
 
@@ -83,7 +83,7 @@ const Register = ({history})=>{
     }
     function handleAvatar(event){
         Resizer.imageFileResizer(
-            event.target.files[0], 400, 400, 'JPEG', 100, 0, uri=>{
+            event.target.files[0], 500, 400, 'JPEG', 100, 0, uri=>{
                 setAvatar(uri)},'base64')
     }
     return(
